@@ -54,6 +54,11 @@ In this workshop, attendees roll up their sleeves with **Claude Code**, Anthropi
   <p>Citable references, key concepts, data points, and the workshop narrative thread.</p>
 </div>
 
+<div class="card">
+  <h3><a href="{{ '/demo-repo-spec' | relative_url }}">Demo Repo Spec</a></h3>
+  <p>Data model, API endpoints, project structure, and the 10 intentional imperfections.</p>
+</div>
+
 </div>
 
 ## Workshop Structure
