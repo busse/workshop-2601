@@ -409,7 +409,7 @@ A small CRM application built with Python, FastAPI, and SQLite.
 
 ## Open Questions
 
-- [ ] **Repo hosting:** Public GitHub repo under Busse's account? Anthropic org? Workshop-specific org?
+- [ ] **Repo hosting:** Public GitHub repo under Chris Busse's account? Anthropic org? Workshop-specific org?
 - [ ] **License:** MIT for maximum simplicity?
 - [ ] **Python version floor:** 3.11 or 3.12? (3.11 is safer for attendee compatibility)
 - [ ] **Include `.claude/commands/`?** Could ship a sample slash command to demonstrate Block 4 stretch goal, but might be confusing pre-workshop

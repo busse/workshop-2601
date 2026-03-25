@@ -59,4 +59,4 @@ Visit [http://localhost:8000](http://localhost:8000) — you should see the app 
 
 If you run into issues, don't worry — we'll have a few minutes at the start of the workshop to troubleshoot.
 
-Questions? Contact [busse@eszetthq.com](mailto:busse@eszetthq.com)
+Questions? Contact [cbusse@singlestoneconsulting.com](mailto:cbusse@singlestoneconsulting.com)

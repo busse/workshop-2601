@@ -7,9 +7,9 @@ title: Home
   <h1>Stop Typing,<br>Start Orchestrating</h1>
   <p class="subtitle">An Agentic Coding Workshop with Claude Code</p>
   <p class="meta">
-    2026 RVATech Data Summit<br>
+    2026 RVATech Data &amp; AI Summit<br>
     March 26, 2026<br>
-    Busse
+    Chris Busse
   </p>
 </div>
 

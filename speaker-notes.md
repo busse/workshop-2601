@@ -5,7 +5,7 @@ title: Speaker Notes
 
 # Speaker Notes
 
-## Stop Typing, Start Orchestrating — RVATech Data Summit 2026
+## Stop Typing, Start Orchestrating — RVATech Data & AI Summit 2026
 
 **How to use this document:** Notes are keyed to slide numbers. Each entry tells you what's on screen, what to say, what to do with your hands (screen switches, typing in terminal, advancing fragments), and how to transition to the next slide. Rehearse with the deck open — advance through fragments as you read each note.
 
@@ -563,7 +563,7 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 
 "The context engineering guide is the one I'd read first if you're going deeper. Best practices doc is your daily reference."
 
-"And I'm at busse@eszetthq.com — happy to talk about this stuff anytime."
+"And I'm at cbusse@singlestoneconsulting.com — happy to talk about this stuff anytime."
 
 **Transition → Slide 35:** "We've got five minutes for questions."
 

@@ -5,7 +5,7 @@ title: Exercise Cards
 
 # Exercise Cards
 
-## Stop Typing, Start Orchestrating — RVATech Data Summit 2026
+## Stop Typing, Start Orchestrating — RVATech Data & AI Summit 2026
 
 Each card is self-contained. You have `mini-crm` cloned and running locally with Claude Code open in the repo directory.
 
@@ -341,4 +341,4 @@ Then invoke it: *"Use the reviewer agent to review the changes I just made."*
 
 ---
 
-*Stop Typing, Start Orchestrating — RVATech Data Summit, March 26, 2026*
+*Stop Typing, Start Orchestrating — RVATech Data & AI Summit, March 26, 2026*

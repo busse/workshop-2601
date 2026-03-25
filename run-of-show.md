@@ -7,7 +7,7 @@ title: Run of Show
 ## An Agentic Coding Workshop with Claude Code
 ### Run-of-Show Outline — 70 Minutes
 
-**Event:** 2026 RVATech Data Summit | **Date:** March 26, 2026 | **Presenter:** Busse
+**Event:** 2026 RVATech Data & AI Summit | **Date:** March 26, 2026 | **Presenter:** Chris Busse
 
 **Format:** Single-track, live code-along. Advanced multi-agent exercises are stretch goals woven into later blocks.
 
@@ -184,7 +184,7 @@ Attendees try one multi-agent pattern:
   - Best practices guide: https://code.claude.com/docs/en/best-practices
   - Context engineering guide: https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents
   - Workshop repo (stays live for practice)
-  - Busse's contact info
+  - Chris Busse's contact info
 - *"You're not replacing developers. You're giving every developer a team."*
 
 ---
@@ -192,7 +192,7 @@ Attendees try one multi-agent pattern:
 ## Buffer / Q&A (5 min) `[1:05–1:10]`
 
 - Open Q&A
-- Live request: audience picks a task, Busse orchestrates it live
+- Live request: audience picks a task, Chris Busse orchestrates it live
 - Overflow for any exercise block that ran long
 
 ---
