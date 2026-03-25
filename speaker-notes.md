@@ -19,15 +19,25 @@ title: Speaker Notes
 - [ ] Exercise cards URL or file ready to share (drop link in chat/Slack when you reach Block 2)
 - [ ] Fallback: if Wi-Fi dies, have pre-run terminal output screenshots in a local folder
 
+**Emoji legend — quick reference:**
+
+| Emoji | Meaning |
+|-------|---------|
+| ▶️ | Advance fragment / do this next |
+| ⏸️ | Pause — let it breathe |
+| ⏭️ | Transition to next slide |
+| 🌐 | Switch to / you're in Chrome |
+| 💻 | Switch to / you're in Terminal |
+
 ---
 
 ## Slide 1 — Title Slide
 
 **On screen:** Title slide — "Stop Typing, Start Orchestrating"
 
-**Say:** Nothing yet. This is up while people settle in. Let it breathe for 30 seconds.
+**Say:** Nothing yet. This is up while people settle in. ⏸️ Let it breathe for 30 seconds.
 
-**Transition → Slide 2:** "Alright, let's get started."
+⏭️ **Transition → Slide 2:** "Alright, let's get started."
 
 ---
 
@@ -37,7 +47,7 @@ title: Speaker Notes
 
 **Say:** "We've got 70 minutes together. Before we dive in, let's make sure everyone's set up."
 
-**Transition → Slide 3:** Advance immediately.
+⏭️ **Transition → Slide 3:** Advance immediately.
 
 ---
 
@@ -47,14 +57,14 @@ title: Speaker Notes
 
 **Say + Do:**
 
-- [advance fragment] "Quick show of hands — who's used an AI coding tool before? Copilot, Cursor, ChatGPT for code, anything." [pause, scan the room]
-- [advance fragment] "Okay, now — who's used one from a *terminal*?" [pause — expect fewer hands] "Perfect. That's exactly why we're here."
-- [advance fragment] "You'll need three things."
-- [advance fragments for each prereq] "Terminal open. Claude Code installed and authenticated. And the workshop repo cloned — that's `github.com/busse/mini-crm`."
+- ▶️ [advance fragment] "Quick show of hands — who's used an AI coding tool before? Copilot, Cursor, ChatGPT for code, anything." ⏸️ [pause, scan the room]
+- ▶️ [advance fragment] "Okay, now — who's used one from a *terminal*?" ⏸️ [pause — expect fewer hands] "Perfect. That's exactly why we're here."
+- ▶️ [advance fragment] "You'll need three things."
+- ▶️ [advance fragments for each prereq] "Terminal open. Claude Code installed and authenticated. And the workshop repo cloned — that's `github.com/busse/mini-crm`."
 
 **If people are stuck:** "If you're not set up yet, pull up the setup instructions — I'll drop the link in chat. You can follow along and catch up during the first demo."
 
-**Transition → Slide 4:** "Now let me set the frame for the next 70 minutes."
+⏭️ **Transition → Slide 4:** "Now let me set the frame for the next 70 minutes."
 
 ---
 
@@ -62,13 +72,13 @@ title: Speaker Notes
 
 **On screen:** Blockquote — "For the next 70 minutes, you're not writing code. You're directing an agent that writes code." + screenshot placeholder
 
-**Say:** Read the quote aloud, slowly. Let it land. Then: "That's the mindset shift. We're going from typing to orchestrating. And by the end of this session, you'll have practiced the actual skills to do it."
+**Say:** Read the quote aloud, slowly. ⏸️ Let it land. Then: "That's the mindset shift. We're going from typing to orchestrating. And by the end of this session, you'll have practiced the actual skills to do it."
 
-**⚡ Switch to terminal.** Launch Claude Code live: type `claude` and hit enter. Let the room see it boot up. "This is Claude Code. It's a terminal-native coding agent from Anthropic. No IDE plugin, no web UI — just your terminal."
+💻 **Switch to terminal.** Launch Claude Code live: type `claude` and hit enter. Let the room see it boot up. "This is Claude Code. It's a terminal-native coding agent from Anthropic. No IDE plugin, no web UI — just your terminal."
 
-**Switch back to Chrome.**
+🌐 **Switch back to Chrome.**
 
-**Transition → Slide 5:** "So why does this matter? Why agentic coding, why now?"
+⏭️ **Transition → Slide 5:** "So why does this matter? Why agentic coding, why now?"
 
 ---
 
@@ -76,9 +86,9 @@ title: Speaker Notes
 
 **On screen:** Section divider — "Block 1 · Why Agentic Coding? · 0:05–0:10"
 
-**Say:** Nothing extra. Advance.
+**Say:** Nothing extra. ▶️ Advance.
 
-**Transition → Slide 6:** Advance immediately.
+⏭️ **Transition → Slide 6:** Advance immediately.
 
 ---
 
@@ -88,12 +98,12 @@ title: Speaker Notes
 
 **Say + Do:**
 
-- [advance] "Three years ago, autocomplete. GitHub Copilot, tab-complete. Helpful, but you were still driving."
-- [advance] "Then copilot mode. Inline suggestions, chat panels. You're still writing the code, but with a really smart pair programmer."
-- [advance] "Now — agents. You describe the task. The agent reads files, makes plans, writes code, runs tests, fixes bugs. *You* review and direct."
-- [advance] "The bottleneck moved. It used to be about how fast you could type. Now it's about how well you can direct."
+- ▶️ [advance] "Three years ago, autocomplete. GitHub Copilot, tab-complete. Helpful, but you were still driving."
+- ▶️ [advance] "Then copilot mode. Inline suggestions, chat panels. You're still writing the code, but with a really smart pair programmer."
+- ▶️ [advance] "Now — agents. You describe the task. The agent reads files, makes plans, writes code, runs tests, fixes bugs. *You* review and direct."
+- ▶️ [advance] "The bottleneck moved. It used to be about how fast you could type. Now it's about how well you can direct."
 
-**Transition → Slide 7:** "So what does 'directing well' actually mean? Three skills."
+⏭️ **Transition → Slide 7:** "So what does 'directing well' actually mean? Three skills."
 
 ---
 
@@ -103,12 +113,12 @@ title: Speaker Notes
 
 **Say + Do:**
 
-- [advance] "One: problem decomposition. Can you break a fuzzy goal into concrete, agent-sized tasks? A task an agent can finish in one conversation?"
-- [advance] "Two: trust calibration. When do you read every line of agent output, and when do you ship it? How do you give the agent a way to check its own work?"
-- [advance] "Three: workflow design. How do you chain multiple agent interactions into something that actually ships? Not a one-shot miracle — a repeatable loop."
-- [advance] "These three skills are the structure for the rest of the workshop. Everything we do maps back to one of them."
+- ▶️ [advance] "One: problem decomposition. Can you break a fuzzy goal into concrete, agent-sized tasks? A task an agent can finish in one conversation?"
+- ▶️ [advance] "Two: trust calibration. When do you read every line of agent output, and when do you ship it? How do you give the agent a way to check its own work?"
+- ▶️ [advance] "Three: workflow design. How do you chain multiple agent interactions into something that actually ships? Not a one-shot miracle — a repeatable loop."
+- ▶️ [advance] "These three skills are the structure for the rest of the workshop. Everything we do maps back to one of them."
 
-**Transition → Slide 8:** "And this isn't theoretical. Let me show you the numbers."
+⏭️ **Transition → Slide 8:** "And this isn't theoretical. Let me show you the numbers."
 
 ---
 
@@ -118,11 +128,11 @@ title: Speaker Notes
 
 **Say + Do:**
 
-- [advance] "Four percent of all public GitHub commits are now authored by Claude Code. Predicted to hit twenty percent by end of this year." [pause] "That's not autocomplete suggestions — those are full commits."
-- [advance] "Anthropic's own engineering org has seen two hundred percent growth in code output per engineer, year over year. Same headcount."
-- [advance] "And this one's my favorite. Boris Cherny, who leads the Claude Code team at Anthropic — he hasn't manually written a single line of code since November 2025. One hundred percent AI-generated. Zero hand edits." [pause] "He orchestrates. We're going to learn how he does it."
+- ▶️ [advance] "Four percent of all public GitHub commits are now authored by Claude Code. Predicted to hit twenty percent by end of this year." ⏸️ [pause] "That's not autocomplete suggestions — those are full commits."
+- ▶️ [advance] "Anthropic's own engineering org has seen two hundred percent growth in code output per engineer, year over year. Same headcount."
+- ▶️ [advance] "And this one's my favorite. Boris Cherny, who leads the Claude Code team at Anthropic — he hasn't manually written a single line of code since November 2025. One hundred percent AI-generated. Zero hand edits." ⏸️ [pause] "He orchestrates. We're going to learn how he does it."
 
-**Transition → Slide 9:** "Okay — enough slides. Let's see it work. From here on out, we're in the terminal."
+⏭️ **Transition → Slide 9:** "Okay — enough slides. Let's see it work. From here on out, we're in the terminal."
 
 ---
 
@@ -132,9 +142,9 @@ title: Speaker Notes
 
 **Say:** "Block 2 — your first real interaction with Claude Code. We're going to explore the mini-CRM repo."
 
-**⚡ Switch to terminal.** Claude Code should already be running from Block 0.
+💻 **Switch to terminal.** Claude Code should already be running from Block 0.
 
-**Transition → Slide 10:** Leave the slide up briefly, then advance. You'll be mostly in the terminal for the next few minutes.
+⏭️ **Transition → Slide 10:** Leave the slide up briefly, then advance. You'll be mostly in the terminal for the next few minutes.
 
 ---
 
@@ -142,7 +152,7 @@ title: Speaker Notes
 
 **On screen:** Example prompts + screenshot placeholder
 
-**⚡ You should be in the terminal now.** The slide is reference — don't linger on it. Switch to terminal.
+💻 **You should be in the terminal now.** The slide is reference — don't linger on it. Switch to terminal.
 
 **DEMO — Do this live (3 min):**
 
@@ -155,7 +165,7 @@ title: Speaker Notes
 3. Type: `Walk me through the request lifecycle for POST /api/deals`
    - This is the impressive one. Claude will follow router → schema → model → database. "Notice: it followed imports across files. It read the router, found the schema, checked the model definition, traced the database call. That's agentic search — glob, grep, read, all driven by the model."
 
-**Transition → Slide 11:** Switch back to Chrome. "Let's talk about what just happened."
+⏭️ **Transition → Slide 11:** 🌐 Switch back to Chrome. "Let's talk about what just happened."
 
 ---
 
@@ -165,12 +175,12 @@ title: Speaker Notes
 
 **Say + Do:**
 
-- [advance] "Claude's agentic search is plain text tools — glob, grep, read — but driven by the model's reasoning. It *chose* which files to open."
-- [advance] "It followed imports across modules on its own."
-- [advance] "And it synthesized a narrative answer — not just dumped file contents."
-- [advance] "You didn't open a single file manually. And you've already got a mental model of the codebase."
+- ▶️ [advance] "Claude's agentic search is plain text tools — glob, grep, read — but driven by the model's reasoning. It *chose* which files to open."
+- ▶️ [advance] "It followed imports across modules on its own."
+- ▶️ [advance] "And it synthesized a narrative answer — not just dumped file contents."
+- ▶️ [advance] "You didn't open a single file manually. And you've already got a mental model of the codebase."
 
-**Transition → Slide 12:** "Your turn. Seven minutes."
+⏭️ **Transition → Slide 12:** "Your turn. Seven minutes."
 
 ---
 
@@ -182,13 +192,13 @@ title: Speaker Notes
 
 **Drop the exercise cards link now** if you haven't already.
 
-**⚡ Switch to terminal** so the audience sees a Claude Code session while they work. You can quietly do the same exercise or prep for the next demo.
+💻 **Switch to terminal** so the audience sees a Claude Code session while they work. You can quietly do the same exercise or prep for the next demo.
 
 **Timer: 7 minutes.** At 6 minutes, give a one-minute warning.
 
-**Debrief (30 sec):** Switch back to Chrome briefly. "Quick takeaway — you just explored an entire codebase without opening a file browser. The agent did the reading. That's skill number one: knowing how to ask."
+**Debrief (30 sec):** 🌐 Switch back to Chrome briefly. "Quick takeaway — you just explored an entire codebase without opening a file browser. The agent did the reading. That's skill number one: knowing how to ask."
 
-**Transition → Slide 13:** "Now let's talk about *how* you ask."
+⏭️ **Transition → Slide 13:** "Now let's talk about *how* you ask."
 
 ---
 
@@ -198,7 +208,7 @@ title: Speaker Notes
 
 **Say:** "Block 3 — this is where the quality of your input starts to matter a lot."
 
-**Transition → Slide 14:** Advance.
+⏭️ **Transition → Slide 14:** Advance.
 
 ---
 
@@ -209,11 +219,11 @@ title: Speaker Notes
 **Say + Do:**
 
 - "You'll hear people say 'prompt engineering.' I want to reframe that. Anthropic's engineering team calls this *context engineering*. Here's why."
-- [advance] "Context rot. As the token count grows, accuracy drops. The model's ability to attend to the right information diminishes."
-- [advance] "Think of it as an attention budget — like human working memory. It's finite. Every token you send is spending part of that budget."
-- [advance] "So the goal isn't just being specific. It's curating the *smallest set of high-signal tokens* that maximize the model's chance of success."
+- ▶️ [advance] "Context rot. As the token count grows, accuracy drops. The model's ability to attend to the right information diminishes."
+- ▶️ [advance] "Think of it as an attention budget — like human working memory. It's finite. Every token you send is spending part of that budget."
+- ▶️ [advance] "So the goal isn't just being specific. It's curating the *smallest set of high-signal tokens* that maximize the model's chance of success."
 
-**Transition → Slide 15:** "Let me show you what that looks like in practice."
+⏭️ **Transition → Slide 15:** "Let me show you what that looks like in practice."
 
 ---
 
@@ -224,10 +234,10 @@ title: Speaker Notes
 **Say + Do:**
 
 - "Here's the same task, two ways." [point to red box] "'Add a search feature.' That's what most people type."
-- [advance] [point to green box] "Now look at this one. It specifies the endpoint, the query parameter, the fields to search, the response format, and that we want tests."
-- [advance] "Let's run both live and compare."
+- ▶️ [advance] [point to green box] "Now look at this one. It specifies the endpoint, the query parameter, the fields to search, the response format, and that we want tests."
+- ▶️ [advance] "Let's run both live and compare."
 
-**⚡ Switch to terminal.**
+💻 **Switch to terminal.**
 
 **DEMO — Vague vs. Structured (3 min):**
 
@@ -251,9 +261,9 @@ title: Speaker Notes
 
 4. "See the difference? Same task. The structured version gave Claude enough context to get it right the first time. And I didn't have to correct it."
 
-**Switch back to Chrome.**
+🌐 **Switch back to Chrome.**
 
-**Transition → Slide 16:** "There's a pattern for this."
+⏭️ **Transition → Slide 16:** "There's a pattern for this."
 
 ---
 
@@ -271,9 +281,9 @@ title: Speaker Notes
 - "**O** — Output format. Files, endpoints, schemas — be specific."
 - "**M** — Measure of done. How will you know it works? Tests? Manual check?"
 
-[advance stat callout] "Anthropic's data shows that just adding verification criteria — the M — gives you a two to three X quality improvement in agent output. That's the single highest-leverage thing you can do."
+▶️ [advance stat callout] "Anthropic's data shows that just adding verification criteria — the M — gives you a two to three X quality improvement in agent output. That's the single highest-leverage thing you can do."
 
-**Transition → Slide 17:** "Your turn. Use this pattern."
+⏭️ **Transition → Slide 17:** "Your turn. Use this pattern."
 
 ---
 
@@ -283,13 +293,13 @@ title: Speaker Notes
 
 **Say:** "Add a favorite contacts feature. But here's the rule: write your prompt *before* you send it. Spend two minutes composing it using DECOMPOSE. The exercise card has a scaffold if you want a starting point. Then run it and compare with your neighbor."
 
-**⚡ Switch to terminal.** Display your Claude Code session while they work.
+💻 **Switch to terminal.** Display your Claude Code session while they work.
 
 **Timer: 6 minutes.** At 5 minutes, one-minute warning.
 
 **Debrief (30 sec):** "How many people got working code on the first pass? [hands] How many needed to refine? [hands] That refinement loop — that's normal. The structured prompt just gets you *closer* on the first try."
 
-**Transition → Slide 18:** "Now let's chain this into a full workflow."
+⏭️ **Transition → Slide 18:** "Now let's chain this into a full workflow."
 
 ---
 
@@ -299,7 +309,7 @@ title: Speaker Notes
 
 **Say:** "Block 4 — this is the biggest block. Fifteen minutes. We're going to build a real feature end-to-end."
 
-**Transition → Slide 19:** Advance.
+⏭️ **Transition → Slide 19:** Advance.
 
 ---
 
@@ -309,15 +319,15 @@ title: Speaker Notes
 
 **Say + Do:**
 
-- [advance each fragment with a beat]
+- ▶️ [advance each fragment with a beat]
 - "The official Claude Code best practice is a four-step loop."
 - "Explore — read the code, understand the landscape. No changes."
 - "Plan — ask for an implementation plan. Review it. Adjust it."
 - "Implement — let the agent code against the plan."
 - "Commit — verify, then commit."
-- [advance final note] "Not every task needs every step. Small changes, skip the plan. But for anything non-trivial, this loop saves you from bad implementations."
+- ▶️ [advance final note] "Not every task needs every step. Small changes, skip the plan. But for anything non-trivial, this loop saves you from bad implementations."
 
-**Transition → Slide 20:** "Let me walk through it live."
+⏭️ **Transition → Slide 20:** "Let me walk through it live."
 
 ---
 
@@ -325,7 +335,7 @@ title: Speaker Notes
 
 **On screen:** Numbered steps — email notifications on deal stage change
 
-**⚡ Switch to terminal.** `/clear` to start fresh.
+💻 **Switch to terminal.** `/clear` to start fresh.
 
 **DEMO — The Full Loop (5 min):**
 
@@ -345,9 +355,9 @@ title: Speaker Notes
 5. **Verify:** Type: `Run the full test suite and show me results.`
    - "Green? Good. That's one full loop: explore, plan, implement, verify."
 
-**Switch back to Chrome.**
+🌐 **Switch back to Chrome.**
 
-**Transition → Slide 21:** "A few tools that make this loop smoother."
+⏭️ **Transition → Slide 21:** "A few tools that make this loop smoother."
 
 ---
 
@@ -363,7 +373,7 @@ title: Speaker Notes
 - "--resume — picks up where you left off in a previous session. Great for next-day continuations."
 - "/btw — side question that doesn't pollute your conversation history. 'Hey, what's the syntax for X?' without derailing your feature work."
 
-**Transition → Slide 22:** "And some things to avoid."
+⏭️ **Transition → Slide 22:** "And some things to avoid."
 
 ---
 
@@ -373,11 +383,11 @@ title: Speaker Notes
 
 **Say + Do:**
 
-- [advance] "The kitchen sink session. You start with 'add a login page,' then 'oh also fix this CSS,' then 'and refactor the database layer.' Don't. /clear between unrelated tasks."
-- [advance] "Correcting over and over. If Claude gets something wrong twice, don't keep nudging. /clear and write a better prompt. Your second attempt will be better than your fifth correction."
-- [advance] "The trust-then-verify gap. Claude's output *looks* right. It compiles. It runs. But did it handle the edge case? Always include verification criteria — you are the only feedback loop otherwise."
+- ▶️ [advance] "The kitchen sink session. You start with 'add a login page,' then 'oh also fix this CSS,' then 'and refactor the database layer.' Don't. /clear between unrelated tasks."
+- ▶️ [advance] "Correcting over and over. If Claude gets something wrong twice, don't keep nudging. /clear and write a better prompt. Your second attempt will be better than your fifth correction."
+- ▶️ [advance] "The trust-then-verify gap. Claude's output *looks* right. It compiles. It runs. But did it handle the edge case? Always include verification criteria — you are the only feedback loop otherwise."
 
-**Transition → Slide 23:** "One more line to anchor this."
+⏭️ **Transition → Slide 23:** "One more line to anchor this."
 
 ---
 
@@ -387,13 +397,13 @@ title: Speaker Notes
 
 **Say:** Read the quote: "You're a tech lead doing code review in real-time, not a developer typing." Then: "Your turn. Ten minutes. Pick one of three features — rate limiting, CSV export, or admin role. Follow the loop: explore, plan, implement, verify. The exercise card has the details. Don't try to do it in one shot — that's the whole point."
 
-**⚡ Switch to terminal.** Work on one of the features yourself while they work.
+💻 **Switch to terminal.** Work on one of the features yourself while they work.
 
 **Timer: 10 minutes.** Give a two-minute warning at 8 minutes.
 
 **Debrief (30 sec):** "How many people used the plan step? [hands] How many skipped straight to implement? [hands to the skippers] How'd that go? [knowing smile] The plan step is annoying until the first time it saves you from a bad implementation."
 
-**Transition → Slide 24:** "Now we level up."
+⏭️ **Transition → Slide 24:** "Now we level up."
 
 ---
 
@@ -403,7 +413,7 @@ title: Speaker Notes
 
 **Say:** "Block 5 — this is the advanced section. Everything we've done so far is one agent, one conversation. Now we go to *multiple agents working in parallel*."
 
-**Transition → Slide 25:** Advance.
+⏭️ **Transition → Slide 25:** Advance.
 
 ---
 
@@ -411,7 +421,7 @@ title: Speaker Notes
 
 **On screen:** Two-column layout — Tab 1 (Writer) / Tab 2 (Reviewer) + fragment about fresh context
 
-**⚡ You need two terminal tabs now.** Set them up side by side if possible.
+💻 **You need two terminal tabs now.** Set them up side by side if possible.
 
 **DEMO — Writer/Reviewer (3 min):**
 
@@ -424,9 +434,9 @@ title: Speaker Notes
 
 3. When Tab 2 produces findings, copy them. Switch to **Tab 1.** Type: `A code reviewer found these issues: [paste]. Fix them.`
 
-[advance fragment] "A fresh context produces unbiased review. Claude won't defend code it just wrote — because it didn't write it, as far as this session knows. You're a manager delegating to two developers."
+▶️ [advance fragment] "A fresh context produces unbiased review. Claude won't defend code it just wrote — because it didn't write it, as far as this session knows. You're a manager delegating to two developers."
 
-**Transition → Slide 26:** "Next pattern — subagents."
+⏭️ **Transition → Slide 26:** "Next pattern — subagents."
 
 ---
 
@@ -444,7 +454,7 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 - While the subagent runs: "Three built-in types. Explore uses Haiku — fast, cheap, read-only. Plan is for research in plan mode. General-purpose has full tools."
 - When results come back: "My main session stays clean. The subagent did the reading, and I got a concise summary."
 
-**Transition → Slide 27:** "And the big one — agent teams."
+⏭️ **Transition → Slide 27:** "And the big one — agent teams."
 
 ---
 
@@ -460,7 +470,7 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 - "They communicate through a shared task list — pending, in-progress, completed — and a mailbox for inter-agent messaging."
 - "Think of it like a project manager spinning up a small dev team for a sprint."
 
-**Transition → Slide 28:** "And this isn't just a concept. It's in production."
+⏭️ **Transition → Slide 28:** "And this isn't just a concept. It's in production."
 
 ---
 
@@ -474,7 +484,7 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 
 [point to right column] "And the extreme example — sixteen agents tasked with writing a C compiler in Rust. Two thousand Claude Code sessions. Twenty thousand dollars in API costs. The result: a hundred thousand lines of code that can compile the Linux kernel on x86, ARM, and RISC-V."
 
-**Transition → Slide 29:** "This next one's fun."
+⏭️ **Transition → Slide 29:** "This next one's fun."
 
 ---
 
@@ -484,15 +494,15 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 
 **Say + Do:**
 
-- [advance] "Boris Cherny — head of Claude Code — runs five local sessions in iTerm2 tabs."
-- [advance] "Plus five to ten web sessions on claude.ai. At the same time."
-- [advance] "He uses system notifications so he gets pinged when a session needs input. He's managing a team."
-- [advance] "Slash commands for every repeated workflow. /commit-push-pr — he says he runs that 'dozens of times daily.' /simplify for code cleanup. /verify-app for end-to-end tests."
-- [advance] "And he uses Opus with extended thinking. Slower, but higher quality. Fewer corrections means less time babysitting."
+- ▶️ [advance] "Boris Cherny — head of Claude Code — runs five local sessions in iTerm2 tabs."
+- ▶️ [advance] "Plus five to ten web sessions on claude.ai. At the same time."
+- ▶️ [advance] "He uses system notifications so he gets pinged when a session needs input. He's managing a team."
+- ▶️ [advance] "Slash commands for every repeated workflow. /commit-push-pr — he says he runs that 'dozens of times daily.' /simplify for code cleanup. /verify-app for end-to-end tests."
+- ▶️ [advance] "And he uses Opus with extended thinking. Slower, but higher quality. Fewer corrections means less time babysitting."
 
 "This is where the workshop title comes from. He's not typing. He's orchestrating."
 
-**Transition → Slide 30:** "Your turn — pick a multi-agent pattern."
+⏭️ **Transition → Slide 30:** "Your turn — pick a multi-agent pattern."
 
 ---
 
@@ -502,13 +512,13 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 
 **Say:** "Eight minutes. Pick one of three options — the exercise card has full details for each. Option A: Writer/Reviewer, what we just demoed. Option B: use a subagent to research, then implement. Option C: split a feature across two parallel sessions, backend and frontend. If you finish early, the stretch goal is to create a custom subagent definition file."
 
-**⚡ Switch to terminal.** Leave both tabs visible if possible.
+💻 **Switch to terminal.** Leave both tabs visible if possible.
 
 **Timer: 8 minutes.** Two-minute warning at 6 minutes.
 
 **Debrief (30 sec):** "Who tried the Writer/Reviewer? What surprised you about the review quality from a fresh context? [take one or two responses] That's the core insight — a separate context is more honest than asking the same agent to review its own work."
 
-**Transition → Slide 31:** "Let's bring it home."
+⏭️ **Transition → Slide 31:** "Let's bring it home."
 
 ---
 
@@ -518,7 +528,7 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 
 **Say:** "Five minutes to wrap up."
 
-**Transition → Slide 32:** Advance.
+⏭️ **Transition → Slide 32:** Advance.
 
 ---
 
@@ -528,13 +538,13 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 
 **Say + Do:**
 
-- [advance] "Problem decomposition — Blocks 2 and 3. You learned to break work into clear, scoped requests that give the agent what it needs."
-- [advance] "Trust calibration — Blocks 3 and 4. You gave the agent verification criteria. You debugged its output. You learned when to trust and when to check."
-- [advance] "Workflow design — Blocks 4 and 5. You built orchestration loops, used session management, and ran multiple agents in parallel."
+- ▶️ [advance] "Problem decomposition — Blocks 2 and 3. You learned to break work into clear, scoped requests that give the agent what it needs."
+- ▶️ [advance] "Trust calibration — Blocks 3 and 4. You gave the agent verification criteria. You debugged its output. You learned when to trust and when to check."
+- ▶️ [advance] "Workflow design — Blocks 4 and 5. You built orchestration loops, used session management, and ran multiple agents in parallel."
 
 "These three skills transfer to *any* agentic tool. Claude Code is what we used today, but the skills are the point."
 
-**Transition → Slide 33:** "Where does this go from here?"
+⏭️ **Transition → Slide 33:** "Where does this go from here?"
 
 ---
 
@@ -544,12 +554,12 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 
 **Say + Do:**
 
-- [advance] "Onboarding — you saw this in Block 2. Drop into an unfamiliar codebase, have Claude read it for you, build a mental model in five minutes."
-- [advance] "Rapid prototyping — idea to working proof of concept in a single session."
-- [advance] "Code review at scale — we just talked about this. Multi-agent review catches things humans miss."
-- [advance] "Legacy migration — the fan-out pattern. Generate a task list of 2,000 files to migrate, then batch-process them with Claude in non-interactive mode. It's like MapReduce for code changes."
+- ▶️ [advance] "Onboarding — you saw this in Block 2. Drop into an unfamiliar codebase, have Claude read it for you, build a mental model in five minutes."
+- ▶️ [advance] "Rapid prototyping — idea to working proof of concept in a single session."
+- ▶️ [advance] "Code review at scale — we just talked about this. Multi-agent review catches things humans miss."
+- ▶️ [advance] "Legacy migration — the fan-out pattern. Generate a task list of 2,000 files to migrate, then batch-process them with Claude in non-interactive mode. It's like MapReduce for code changes."
 
-**Transition → Slide 34:** "One last thought."
+⏭️ **Transition → Slide 34:** "One last thought."
 
 ---
 
@@ -557,7 +567,7 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 
 **On screen:** Quote — "You're not replacing developers. You're giving every developer a team." + resource links
 
-**Say:** Read the quote. Pause.
+**Say:** Read the quote. ⏸️ Pause.
 
 "The workshop repo stays live — you can keep practicing against it. The resources below are the ones I leaned on to build this session."
 
@@ -565,7 +575,7 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 
 "And I'm at cbusse@singlestoneconsulting.com — happy to talk about this stuff anytime."
 
-**Transition → Slide 35:** "We've got five minutes for questions."
+⏭️ **Transition → Slide 35:** "We've got five minutes for questions."
 
 ---
 
@@ -575,7 +585,7 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 
 **Say:** "Questions? Or — even better — give me a task. Something you'd want to build or fix in your own work. We'll orchestrate it live right here."
 
-**⚡ Switch to terminal.** Be ready to type whatever the audience suggests.
+💻 **Switch to terminal.** Be ready to type whatever the audience suggests.
 
 **If no questions / quiet room:**
 - "Okay, here's one I get a lot: 'what about security? Should I be worried about sending my code to an API?' Short answer: Claude Code runs locally. Your code stays on your machine. The prompts go to the API, but the model doesn't train on them. Check the docs for the full privacy model."
