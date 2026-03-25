@@ -1,0 +1,24 @@
+title: "Stop Typing, Start Orchestrating"
+description: "An Agentic Coding Workshop with Claude Code — RVATech Data Summit 2026"
+url: "https://busse.github.io"
+baseurl: "/workshop-2601"
+
+markdown: kramdown
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+permalink: pretty
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "default"

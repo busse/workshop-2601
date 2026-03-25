@@ -1,0 +1,849 @@
+---
+layout: none
+permalink: /slides/
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Stop Typing, Start Orchestrating — RVATech Data Summit 2026</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/theme/white.min.css" id="theme">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/highlight/monokai.min.css">
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;600;700&family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<style>
+  /* ─── Base theme overrides ─── */
+  :root {
+    --r-background-color: #ffffff;
+    --r-main-font: 'Spectral', Georgia, serif;
+    --r-main-font-size: 32px;
+    --r-main-color: #1a1a1a;
+    --r-heading-font: 'Rokkitt', 'Courier New', monospace;
+    --r-heading-color: #000000;
+    --r-heading-font-weight: 700;
+    --r-heading-text-transform: none;
+    --r-heading-letter-spacing: -0.02em;
+    --r-heading1-size: 2.2em;
+    --r-heading2-size: 1.6em;
+    --r-heading3-size: 1.2em;
+    --r-link-color: #0054a6;
+    --r-link-color-hover: #003d7a;
+    --r-code-font: 'Roboto Mono', monospace;
+    --r-selection-background-color: #0054a620;
+    --r-selection-color: #000;
+  }
+
+  .reveal {
+    font-variant-ligatures: common-ligatures;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── Headings ─── */
+  .reveal h1, .reveal h2, .reveal h3, .reveal h4 {
+    font-family: var(--r-heading-font);
+    line-height: 1.15;
+    margin-bottom: 0.6em;
+  }
+  .reveal h1 { letter-spacing: -0.03em; }
+  .reveal h2 { letter-spacing: -0.02em; }
+
+  /* ─── Body text ─── */
+  .reveal p, .reveal li {
+    font-family: var(--r-main-font);
+    font-weight: 400;
+    line-height: 1.55;
+    color: #2a2a2a;
+  }
+  .reveal .slides section {
+    text-align: left;
+    padding: 0 40px;
+  }
+
+  /* ─── Lists ─── */
+  .reveal ul, .reveal ol {
+    margin-left: 0.4em;
+  }
+  .reveal li {
+    margin-bottom: 0.4em;
+    font-size: 0.88em;
+  }
+  .reveal li li {
+    font-size: 0.92em;
+    color: #555;
+  }
+
+  /* ─── Code ─── */
+  .reveal code {
+    font-family: var(--r-code-font);
+    font-size: 0.85em;
+    background: #f4f4f4;
+    border: 1px solid #e0e0e0;
+    border-radius: 3px;
+    padding: 0.1em 0.35em;
+    color: #1a1a1a;
+  }
+  .reveal pre {
+    width: 100%;
+    margin: 0.8em 0;
+    box-shadow: none;
+  }
+  .reveal pre code {
+    font-size: 0.7em;
+    line-height: 1.5;
+    padding: 1em 1.2em;
+    background: #1a1a1a;
+    color: #e0e0e0;
+    border: none;
+    border-radius: 6px;
+    max-height: 420px;
+  }
+
+  /* ─── Emphasis & highlights ─── */
+  .reveal strong { color: #000; font-weight: 600; }
+  .reveal em { font-style: italic; color: #444; }
+  .reveal .highlight { color: #0054a6; font-weight: 600; }
+  .reveal a { text-decoration: underline; text-underline-offset: 3px; }
+
+  /* ─── Blockquotes ─── */
+  .reveal blockquote {
+    background: #f8f8f8;
+    border-left: 4px solid #0054a6;
+    padding: 0.8em 1.2em;
+    margin: 0.8em 0;
+    font-style: italic;
+    font-size: 0.95em;
+    box-shadow: none;
+    width: 90%;
+  }
+  .reveal blockquote p { color: #333; margin: 0; }
+
+  /* ─── Tables ─── */
+  .reveal table {
+    font-size: 0.72em;
+    border-collapse: collapse;
+    margin: 0.6em 0;
+    width: 100%;
+  }
+  .reveal table th {
+    font-family: var(--r-heading-font);
+    font-weight: 600;
+    background: #f0f0f0;
+    padding: 0.5em 0.8em;
+    text-align: left;
+    border-bottom: 2px solid #ccc;
+  }
+  .reveal table td {
+    padding: 0.45em 0.8em;
+    border-bottom: 1px solid #e5e5e5;
+    vertical-align: top;
+  }
+
+  /* ─── Screenshot placeholder ─── */
+  .screenshot-placeholder {
+    background: #f0f0f0;
+    border: 2px dashed #bbb;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    font-family: var(--r-code-font);
+    font-size: 0.65em;
+    min-height: 280px;
+    margin: 0.6em 0;
+  }
+  .screenshot-placeholder.short { min-height: 180px; }
+
+  /* ─── Stat callout ─── */
+  .stat-callout {
+    text-align: center;
+    padding: 0.6em 0;
+  }
+  .stat-callout .number {
+    font-family: var(--r-heading-font);
+    font-size: 3.2em;
+    font-weight: 700;
+    color: #000;
+    line-height: 1;
+  }
+  .stat-callout .label {
+    font-family: var(--r-main-font);
+    font-size: 0.8em;
+    color: #666;
+    margin-top: 0.2em;
+  }
+  .stat-callout .source {
+    font-family: var(--r-code-font);
+    font-size: 0.5em;
+    color: #aaa;
+    margin-top: 0.3em;
+  }
+
+  /* ─── Two-column layout ─── */
+  .columns {
+    display: flex;
+    gap: 2em;
+    align-items: flex-start;
+  }
+  .columns .col { flex: 1; }
+  .columns .col-narrow { flex: 0.7; }
+  .columns .col-wide { flex: 1.3; }
+
+  /* ─── Section divider slides ─── */
+  .reveal .section-divider {
+    text-align: center;
+  }
+  .reveal .section-divider h2 {
+    font-size: 2em;
+    margin-bottom: 0.15em;
+  }
+  .reveal .section-divider .block-label {
+    font-family: var(--r-code-font);
+    font-size: 0.55em;
+    color: #999;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .reveal .section-divider .block-time {
+    font-family: var(--r-code-font);
+    font-size: 0.5em;
+    color: #bbb;
+    margin-top: 0.3em;
+  }
+
+  /* ─── Title slide ─── */
+  .reveal .title-slide {
+    text-align: center;
+  }
+  .reveal .title-slide h1 {
+    font-size: 2.4em;
+    margin-bottom: 0.1em;
+  }
+  .reveal .title-slide .subtitle {
+    font-family: var(--r-main-font);
+    font-size: 0.85em;
+    color: #555;
+    font-style: italic;
+    margin-bottom: 1.2em;
+  }
+  .reveal .title-slide .meta {
+    font-family: var(--r-code-font);
+    font-size: 0.5em;
+    color: #999;
+    line-height: 1.8;
+  }
+
+  /* ─── Exercise slide ─── */
+  .exercise-box {
+    background: #fafafa;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 1em 1.4em;
+    margin: 0.5em 0;
+  }
+  .exercise-box .exercise-label {
+    font-family: var(--r-heading-font);
+    font-weight: 700;
+    font-size: 0.7em;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: #888;
+    margin-bottom: 0.5em;
+  }
+
+  /* ─── Comparison (vague vs structured) ─── */
+  .compare-bad {
+    background: #fff5f5;
+    border-left: 4px solid #cc4444;
+    padding: 0.6em 1em;
+    margin: 0.4em 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .compare-good {
+    background: #f5faf5;
+    border-left: 4px solid #448844;
+    padding: 0.6em 1em;
+    margin: 0.4em 0;
+    border-radius: 0 6px 6px 0;
+  }
+  .compare-bad .compare-label,
+  .compare-good .compare-label {
+    font-family: var(--r-code-font);
+    font-size: 0.55em;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.3em;
+  }
+  .compare-bad .compare-label { color: #cc4444; }
+  .compare-good .compare-label { color: #448844; }
+
+  /* ─── Mnemonic letters ─── */
+  .mnemonic-letter {
+    font-family: var(--r-heading-font);
+    font-weight: 700;
+    color: #0054a6;
+    font-size: 1.1em;
+  }
+
+  /* ─── Footer / progress ─── */
+  .reveal .slide-number {
+    font-family: var(--r-code-font);
+    font-size: 12px;
+    color: #bbb;
+  }
+
+  /* ─── Fragment highlights ─── */
+  .reveal .fragment.highlight-current-blue.current-fragment {
+    color: #0054a6;
+  }
+
+  /* ─── Closing slide ─── */
+  .reveal .closing-slide {
+    text-align: center;
+  }
+  .reveal .closing-slide h2 {
+    font-size: 1.8em;
+    margin-bottom: 0.5em;
+  }
+  .reveal .closing-slide .resources {
+    text-align: left;
+    display: inline-block;
+    font-size: 0.7em;
+  }
+</style>
+</head>
+
+<body>
+<div class="reveal">
+<div class="slides">
+
+<!-- ════════════════════════════════════════
+     TITLE SLIDE
+     ════════════════════════════════════════ -->
+<section class="title-slide">
+  <h1>Stop Typing,<br>Start Orchestrating</h1>
+  <p class="subtitle">An Agentic Coding Workshop with Claude Code</p>
+  <p class="meta">
+    2026 RVATech Data Summit<br>
+    March 26, 2026<br>
+    Busse
+  </p>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     BLOCK 0 — SETUP & ORIENTATION
+     ════════════════════════════════════════ -->
+<section class="section-divider">
+  <p class="block-label">Block 0</p>
+  <h2>Setup &amp; Orientation</h2>
+  <p class="block-time">0:00 – 0:05</p>
+</section>
+
+<section>
+  <h2>Quick check</h2>
+  <ul>
+    <li class="fragment">Who's used an AI coding tool before?</li>
+    <li class="fragment">Who's used one from a <strong>terminal</strong>?</li>
+  </ul>
+  <div style="margin-top: 1.2em;">
+    <p class="fragment"><strong>You'll need:</strong></p>
+    <ul>
+      <li class="fragment">Terminal open</li>
+      <li class="fragment">Claude Code installed &amp; authenticated</li>
+      <li class="fragment">Workshop repo cloned</li>
+    </ul>
+    <pre class="fragment" style="margin-top: 0.6em;"><code class="language-text">git clone https://github.com/busse/mini-crm.git &amp;&amp; cd mini-crm</code></pre>
+  </div>
+</section>
+
+<section>
+  <h2>The frame for today</h2>
+  <blockquote>
+    <p>"For the next 70 minutes, you're not writing code.<br>You're directing an agent that writes code."</p>
+  </blockquote>
+  <div class="screenshot-placeholder short">
+    [ Screenshot: Terminal with Claude Code ready, repo URL on screen ]
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     BLOCK 1 — WHY AGENTIC CODING?
+     ════════════════════════════════════════ -->
+<section class="section-divider">
+  <p class="block-label">Block 1</p>
+  <h2>Why Agentic Coding?</h2>
+  <p class="block-time">0:05 – 0:10</p>
+</section>
+
+<section>
+  <h2>The shift</h2>
+  <h3 style="text-align: center; color: #666; font-family: var(--r-code-font); font-weight: 400; font-size: 0.9em; letter-spacing: 0.02em; margin-top: 1em;">
+    <span class="fragment">autocomplete</span>
+    <span class="fragment"> → copilot</span>
+    <span class="fragment" style="color: #000; font-weight: 500;"> → agent</span>
+  </h3>
+  <p class="fragment" style="text-align: center; margin-top: 1.5em; font-size: 0.9em;">
+    The bottleneck moved from <em>writing</em> to <strong>directing</strong>.
+  </p>
+</section>
+
+<section>
+  <h2>Three skills that matter now</h2>
+  <ol>
+    <li class="fragment"><strong>Problem decomposition</strong><br><span style="font-size:0.82em; color:#555;">Breaking work into agent-sized tasks</span></li>
+    <li class="fragment"><strong>Trust calibration</strong><br><span style="font-size:0.82em; color:#555;">Knowing when to verify vs. ship</span></li>
+    <li class="fragment"><strong>Workflow design</strong><br><span style="font-size:0.82em; color:#555;">Chaining agent steps into reliable pipelines</span></li>
+  </ol>
+  <p class="fragment" style="margin-top: 0.8em; font-size: 0.85em; color: #444;">This workshop is about building these three skills.</p>
+</section>
+
+<section>
+  <h2>The numbers</h2>
+  <div class="columns">
+    <div class="col stat-callout fragment">
+      <div class="number">4%</div>
+      <div class="label">of public GitHub commits<br>authored by Claude Code</div>
+      <div class="source">Predicted to hit 20% by end of 2026</div>
+    </div>
+    <div class="col stat-callout fragment">
+      <div class="number">200%</div>
+      <div class="label">growth in code output<br>per Anthropic engineer</div>
+      <div class="source">Year over year</div>
+    </div>
+    <div class="col stat-callout fragment">
+      <div class="number">100%</div>
+      <div class="label">of Boris Cherny's code<br>written by AI since Nov 2025</div>
+      <div class="source">Head of Claude Code, zero manual edits</div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     BLOCK 2 — CODEBASE NAVIGATION
+     ════════════════════════════════════════ -->
+<section class="section-divider">
+  <p class="block-label">Block 2 · Demo + Exercise</p>
+  <h2>Codebase Navigation</h2>
+  <p class="block-time">0:10 – 0:20</p>
+</section>
+
+<section>
+  <h2>Your first conversation</h2>
+  <p style="font-size: 0.85em; color: #555; margin-bottom: 0.6em;">Ask questions like you'd ask a senior engineer who knows the codebase.</p>
+  <pre><code class="language-text">> What does this project do?
+
+> Where is the main entry point?
+
+> Walk me through the request lifecycle for POST /api/deals</code></pre>
+  <div class="screenshot-placeholder">
+    [ Screenshot: Claude Code tool-use trace — reading files, grepping, following imports ]
+  </div>
+</section>
+
+<section>
+  <h2>What just happened</h2>
+  <p>Claude Code's "agentic search" is <code>glob</code> + <code>grep</code> + <code>read</code>, driven by the model.</p>
+  <ul>
+    <li class="fragment">It chose which files to open</li>
+    <li class="fragment">It followed imports across modules</li>
+    <li class="fragment">It synthesized a narrative answer</li>
+  </ul>
+  <p class="fragment" style="margin-top: 0.8em; font-size: 0.85em;">You didn't open a single file manually.</p>
+</section>
+
+<section>
+  <div class="exercise-box">
+    <div class="exercise-label">Exercise — 7 minutes</div>
+    <p style="font-size: 0.85em;">Explore the <code>mini-crm</code> repo on your own machine:</p>
+    <ol style="font-size: 0.82em;">
+      <li><strong>Warm-up:</strong> Ask Claude Code to summarize the project structure</li>
+      <li><strong>Directed:</strong> Find where authentication is handled</li>
+      <li><strong>Deeper:</strong> <em>"What happens when a POST request is made to /api/deals?"</em></li>
+      <li><strong>Stretch:</strong> <em>"Are there any obvious bugs or code smells?"</em></li>
+    </ol>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     BLOCK 3 — PROMPT STRUCTURING
+     ════════════════════════════════════════ -->
+<section class="section-divider">
+  <p class="block-label">Block 3 · Demo + Exercise</p>
+  <h2>Prompt Structuring</h2>
+  <p class="block-time">0:20 – 0:30</p>
+</section>
+
+<section>
+  <h2>Context engineering,<br>not just prompting</h2>
+  <p style="font-size: 0.88em;">You're curating the smallest set of <strong>high-signal tokens</strong> to maximize the model's chance of success.</p>
+  <ul>
+    <li class="fragment"><strong>Context rot</strong> — accuracy drops as token count grows</li>
+    <li class="fragment"><strong>Attention budget</strong> — like human working memory, it's finite</li>
+    <li class="fragment">The quality of your input determines the quality of the output</li>
+  </ul>
+  <p class="fragment" style="font-size: 0.65em; color: #999; margin-top: 0.8em;">
+    Source: Anthropic, "Effective Context Engineering for AI Agents"
+  </p>
+</section>
+
+<section>
+  <h2>Vague vs. structured</h2>
+  <div class="compare-bad">
+    <div class="compare-label">Vague</div>
+    <p style="font-size: 0.8em; margin: 0;"><em>"Add a search feature"</em></p>
+  </div>
+  <div class="compare-good fragment">
+    <div class="compare-label">Structured</div>
+    <p style="font-size: 0.8em; margin: 0;"><em>"Add a search endpoint to the API: accepts a query param <code>q</code>, searches the <code>title</code> and <code>description</code> fields in the contacts table, returns paginated JSON matching the existing list endpoint format. Add tests."</em></p>
+  </div>
+  <p class="fragment" style="font-size: 0.82em; margin-top: 0.6em;">
+    Let's run both live and compare the output.
+  </p>
+  <pre class="fragment" style="font-size: 0.55em; margin-top: 0.4em;"><code class="language-text"># 1. Run the vague prompt → see what happens
+# 2. Reset:  git checkout . && git clean -fd
+# 3. Run the structured prompt → compare</code></pre>
+</section>
+
+<section>
+  <h2>The DECOMPOSE pattern</h2>
+  <ul>
+    <li><span class="mnemonic-letter">D</span>efine the outcome</li>
+    <li><span class="mnemonic-letter">E</span>xisting patterns to follow</li>
+    <li><span class="mnemonic-letter">C</span>onstraints and edge cases</li>
+    <li><span class="mnemonic-letter">O</span>utput format expected</li>
+    <li><span class="mnemonic-letter">M</span>easure of done</li>
+  </ul>
+  <div class="stat-callout fragment" style="margin-top: 0.6em;">
+    <div class="number" style="font-size: 2em;">2–3×</div>
+    <div class="label">quality improvement when you give<br>the agent verification criteria</div>
+  </div>
+</section>
+
+<section>
+  <div class="exercise-box">
+    <div class="exercise-label">Exercise — 6 minutes</div>
+    <p style="font-size: 0.85em;">Add a "favorite contacts" feature to the CRM:</p>
+    <ol style="font-size: 0.82em;">
+      <li>Write a structured prompt using <strong>DECOMPOSE</strong> before sending</li>
+      <li>Run it through Claude Code</li>
+      <li>Compare output with a neighbor — whose prompt produced more complete code?</li>
+    </ol>
+    <p style="font-size: 0.78em; color: #888; margin-top: 0.4em;"><strong>Stretch:</strong> Refine the prompt based on what Claude got wrong, re-run, see the improvement.</p>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     BLOCK 4 — TASK ORCHESTRATION
+     ════════════════════════════════════════ -->
+<section class="section-divider">
+  <p class="block-label">Block 4 · Demo + Exercise</p>
+  <h2>Task Orchestration &amp; Iteration</h2>
+  <p class="block-time">0:30 – 0:45</p>
+</section>
+
+<section>
+  <h2>The orchestration loop</h2>
+  <h3 style="text-align: center; font-family: var(--r-code-font); font-weight: 400; font-size: 0.85em; color: #444; margin: 1em 0;">
+    <span class="fragment highlight-current-blue">Explore</span>
+    <span class="fragment"> → </span>
+    <span class="fragment highlight-current-blue">Plan</span>
+    <span class="fragment"> → </span>
+    <span class="fragment highlight-current-blue">Implement</span>
+    <span class="fragment"> → </span>
+    <span class="fragment highlight-current-blue">Commit</span>
+  </h3>
+  <p class="fragment" style="font-size: 0.82em; color: #555; text-align: center;">Official Claude Code best practice. Not every task needs every step.</p>
+</section>
+
+<section>
+  <h2>Demo: building a feature end-to-end</h2>
+  <p style="font-size: 0.82em; margin-bottom: 0.5em;">Adding email notifications when a deal moves to "Closed Won":</p>
+  <ol style="font-size: 0.78em;">
+    <li class="fragment"><strong>Explore</strong> — <em>"Read the deal_service and understand how stage transitions work."</em></li>
+    <li class="fragment"><strong>Plan</strong> — <em>"Create an implementation plan for email notifications. Don't write code yet."</em></li>
+    <li class="fragment"><strong>Implement</strong> — <em>"Go ahead. Run tests after each major change."</em></li>
+    <li class="fragment"><strong>Debug</strong> — <em>"I got this error: [paste]. Fix it."</em></li>
+    <li class="fragment"><strong>Verify</strong> — <em>"Run the tests and show me the results."</em></li>
+  </ol>
+  <div class="screenshot-placeholder short">
+    [ Screenshot: Plan mode output → implementation → test results ]
+  </div>
+</section>
+
+<section>
+  <h2>Session management</h2>
+  <table>
+    <thead>
+      <tr><th>Command</th><th>What it does</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><code>/clear</code></td><td>Reset context between unrelated tasks</td></tr>
+      <tr><td><code>/compact</code></td><td>Summarize conversation to free context</td></tr>
+      <tr><td><code>Esc</code></td><td>Stop Claude mid-action (context preserved)</td></tr>
+      <tr><td><code>Esc + Esc</code></td><td>Rewind to a previous checkpoint</td></tr>
+      <tr><td><code>--resume</code></td><td>Pick up a previous conversation</td></tr>
+      <tr><td><code>/btw</code></td><td>Side question — doesn't enter history</td></tr>
+    </tbody>
+  </table>
+</section>
+
+<section>
+  <h2>Anti-patterns to avoid</h2>
+  <ul>
+    <li class="fragment"><strong>The kitchen sink session</strong><br><span style="font-size:0.8em; color:#666;">Mixing unrelated tasks in one session. Fix: <code>/clear</code> between tasks.</span></li>
+    <li class="fragment"><strong>Correcting over and over</strong><br><span style="font-size:0.8em; color:#666;">After two failed corrections, <code>/clear</code> and write a better prompt.</span></li>
+    <li class="fragment"><strong>The trust-then-verify gap</strong><br><span style="font-size:0.8em; color:#666;">Always include verification criteria. You are the only feedback loop otherwise.</span></li>
+  </ul>
+</section>
+
+<section>
+  <blockquote>
+    <p>"You're a tech lead doing code review in real-time, not a developer typing."</p>
+  </blockquote>
+  <div class="exercise-box" style="margin-top: 0.8em;">
+    <div class="exercise-label">Exercise — 10 minutes</div>
+    <p style="font-size: 0.85em;">Build a feature using the orchestration loop:</p>
+    <ol style="font-size: 0.82em;">
+      <li>Choose a task: rate limiting, CSV export, or admin role</li>
+      <li>Explore → Plan → Implement → Verify</li>
+      <li>Feed errors back. Get to working code through the loop, not one shot.</li>
+    </ol>
+    <p style="font-size: 0.78em; color: #888; margin-top: 0.4em;"><strong>Stretch:</strong> Use <code>/compact</code> mid-session, or create a slash command for a repeated step.</p>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     BLOCK 5 — MULTI-AGENT PATTERNS
+     ════════════════════════════════════════ -->
+<section class="section-divider">
+  <p class="block-label">Block 5 · Demo + Exercise</p>
+  <h2>Multi-Agent Patterns</h2>
+  <p class="block-time">0:45 – 1:00</p>
+</section>
+
+<section>
+  <h2>Pattern 1: Writer / Reviewer</h2>
+  <div class="columns">
+    <div class="col">
+      <h3 style="font-size: 0.85em;">Tab 1 — Writer</h3>
+      <pre><code class="language-text">> Implement a rate limiter
+  for our API endpoints</code></pre>
+    </div>
+    <div class="col">
+      <h3 style="font-size: 0.85em;">Tab 2 — Reviewer</h3>
+      <pre><code class="language-text">> Review the rate limiter in
+  @app/routers/deals.py.
+  Look for edge cases, race
+  conditions, and consistency.</code></pre>
+    </div>
+  </div>
+  <p class="fragment" style="font-size: 0.82em; margin-top: 0.6em;">Feed review back to Tab 1. A <strong>fresh context</strong> produces unbiased review — Claude won't defend code it just wrote.</p>
+</section>
+
+<section>
+  <h2>Pattern 2: Subagents</h2>
+  <p style="font-size: 0.85em;">Specialized agents that run in their own context window.</p>
+  <pre><code class="language-text">> Use a subagent to research how the existing codebase handles
+  file uploads. Report back the patterns used.</code></pre>
+  <div class="columns" style="margin-top: 0.6em;">
+    <div class="col">
+      <h3 style="font-size: 0.75em;">Built-in subagents</h3>
+      <ul style="font-size: 0.78em;">
+        <li><strong>Explore</strong> — Haiku, read-only, fast</li>
+        <li><strong>Plan</strong> — research for planning</li>
+        <li><strong>General-purpose</strong> — full tools</li>
+      </ul>
+    </div>
+    <div class="col">
+      <h3 style="font-size: 0.75em;">Why subagents?</h3>
+      <ul style="font-size: 0.78em;">
+        <li>Keeps main session context clean</li>
+        <li>Limit tool access per agent</li>
+        <li>Route to cheaper/faster models</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Pattern 3: Agent Teams</h2>
+  <p style="font-size: 0.85em;">Multiple Claude Code instances coordinating via shared task lists and messaging.</p>
+  <div class="columns" style="margin-top: 0.4em;">
+    <div class="col-wide">
+      <ul style="font-size: 0.78em;">
+        <li><strong>Team lead</strong> — decomposes work, spawns teammates, synthesizes results</li>
+        <li><strong>Teammates</strong> — independent context, own task queues</li>
+        <li><strong>Shared task list</strong> — pending / in-progress / completed</li>
+        <li><strong>Mailbox</strong> — inter-agent messaging</li>
+      </ul>
+    </div>
+    <div class="col-narrow">
+      <div class="screenshot-placeholder short">
+        [ Screenshot: Agent Teams<br>split-pane view ]
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Real-world examples</h2>
+  <div class="columns">
+    <div class="col">
+      <h3 style="font-size: 0.82em;">Code Review</h3>
+      <p style="font-size: 0.75em;">Launched March 9, 2026. Multiple agents review a PR in parallel, cross-verify findings, rank by severity.</p>
+      <div class="columns" style="gap: 1em;">
+        <div class="col stat-callout">
+          <div class="number" style="font-size: 1.8em;">16%</div>
+          <div class="label" style="font-size: 0.7em;">PRs with substantive<br>review — before</div>
+        </div>
+        <div class="col stat-callout">
+          <div class="number" style="font-size: 1.8em;">54%</div>
+          <div class="label" style="font-size: 0.7em;">PRs with substantive<br>review — after</div>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <h3 style="font-size: 0.82em;">C Compiler</h3>
+      <p style="font-size: 0.75em;">16 agents, ~2,000 sessions, $20K in API costs. Produced 100K lines of Rust. Builds the Linux kernel on x86, ARM, and RISC-V.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Boris Cherny's daily setup</h2>
+  <div class="columns">
+    <div class="col-wide">
+      <ul>
+        <li class="fragment"><strong>5 local sessions</strong> in iTerm2 tabs</li>
+        <li class="fragment"><strong>5-10 web sessions</strong> on claude.ai</li>
+        <li class="fragment">System notifications for input alerts</li>
+        <li class="fragment"><strong>Slash commands</strong> for every repeated workflow<br>
+          <span style="font-size: 0.8em; color: #666;"><code>/commit-push-pr</code>, <code>/simplify</code>, <code>/verify-app</code></span></li>
+        <li class="fragment"><strong>Opus + thinking</strong> — slower, but fewer corrections</li>
+      </ul>
+    </div>
+    <div class="col-narrow">
+      <div class="screenshot-placeholder short">
+        [ Screenshot: Multi-tab<br>terminal setup ]
+      </div>
+    </div>
+  </div>
+  <p class="fragment" style="font-size: 0.65em; color: #999; margin-top: 0.3em;">
+    Source: howborisusesclaudecode.com
+  </p>
+</section>
+
+<section>
+  <div class="exercise-box">
+    <div class="exercise-label">Exercise — 8 minutes · choose one</div>
+    <div class="columns" style="gap: 1em;">
+      <div class="col" style="font-size: 0.78em;">
+        <strong>Option A: Writer/Reviewer</strong><br>
+        Write a feature in one session. Review it in a fresh session. Feed review back.
+      </div>
+      <div class="col" style="font-size: 0.78em;">
+        <strong>Option B: Subagent</strong><br>
+        Use a subagent to research a question, then implement based on findings.
+      </div>
+      <div class="col" style="font-size: 0.78em;">
+        <strong>Option C: Parallel</strong><br>
+        Split a feature — backend in one session, frontend in another.
+      </div>
+    </div>
+    <p style="font-size: 0.72em; color: #888; margin-top: 0.5em;"><strong>Stretch:</strong> Create a custom subagent in <code>.claude/agents/</code> with a focused system prompt and limited tools.</p>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     BLOCK 6 — WRAP-UP
+     ════════════════════════════════════════ -->
+<section class="section-divider">
+  <p class="block-label">Block 6</p>
+  <h2>Wrap-Up &amp; What's Next</h2>
+  <p class="block-time">1:00 – 1:05</p>
+</section>
+
+<section>
+  <h2>The three skills, revisited</h2>
+  <ol>
+    <li class="fragment"><strong>Problem decomposition</strong> — Block 2–3: you learned to break work into clear, scoped requests</li>
+    <li class="fragment"><strong>Trust calibration</strong> — Block 3–4: you learned to give verification criteria and debug agent output</li>
+    <li class="fragment"><strong>Workflow design</strong> — Block 4–5: you built orchestration loops and multi-agent pipelines</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Where this applies</h2>
+  <ul>
+    <li class="fragment"><strong>Onboarding</strong> — Drop into an unfamiliar codebase and understand it in minutes</li>
+    <li class="fragment"><strong>Rapid prototyping</strong> — Go from idea to working proof of concept in a session</li>
+    <li class="fragment"><strong>Code review at scale</strong> — Multi-agent review catches what humans miss</li>
+    <li class="fragment"><strong>Legacy migration</strong> — Fan-out pattern: generate task list, batch process with <code>claude&nbsp;-p</code></li>
+  </ul>
+</section>
+
+<section class="closing-slide">
+  <blockquote style="text-align: center; border-left: none; background: none;">
+    <p style="font-size: 1.15em; font-style: normal; font-weight: 600; color: #000;">"You're not replacing developers.<br>You're giving every developer a team."</p>
+  </blockquote>
+  <div class="resources" style="margin-top: 1em;">
+    <table>
+      <tbody>
+        <tr><td style="border:none; padding: 0.3em 0.8em;"><strong>Docs</strong></td><td style="border:none; padding: 0.3em 0.8em;"><a href="https://code.claude.com/docs">code.claude.com/docs</a></td></tr>
+        <tr><td style="border:none; padding: 0.3em 0.8em;"><strong>Best practices</strong></td><td style="border:none; padding: 0.3em 0.8em;"><a href="https://code.claude.com/docs/en/best-practices">code.claude.com/docs/en/best-practices</a></td></tr>
+        <tr><td style="border:none; padding: 0.3em 0.8em;"><strong>Context engineering</strong></td><td style="border:none; padding: 0.3em 0.8em;"><a href="https://www.anthropic.com/engineering/effective-context-engineering-for-ai-agents">anthropic.com/engineering/...</a></td></tr>
+        <tr><td style="border:none; padding: 0.3em 0.8em;"><strong>Workshop repo</strong></td><td style="border:none; padding: 0.3em 0.8em;"><code>github.com/...</code></td></tr>
+        <tr><td style="border:none; padding: 0.3em 0.8em;"><strong>Contact</strong></td><td style="border:none; padding: 0.3em 0.8em;"><a href="mailto:busse@eszetthq.com">busse@eszetthq.com</a></td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+<!-- ════════════════════════════════════════
+     BUFFER / Q&A
+     ════════════════════════════════════════ -->
+<section class="section-divider">
+  <p class="block-label">Buffer</p>
+  <h2>Q&amp;A</h2>
+  <p class="block-time">1:05 – 1:10</p>
+  <p style="font-size: 0.75em; color: #888; margin-top: 1em;">Pick a task. Let's orchestrate it live.</p>
+</section>
+
+
+</div><!-- /slides -->
+</div><!-- /reveal -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/reveal.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/5.1.0/plugin/highlight/highlight.min.js"></script>
+<script>
+Reveal.initialize({
+  hash: true,
+  slideNumber: 'c/t',
+  width: 1280,
+  height: 720,
+  margin: 0.08,
+  minScale: 0.2,
+  maxScale: 1.5,
+  transition: 'none',
+  backgroundTransition: 'none',
+  center: false,
+  plugins: [ RevealHighlight ]
+});
+</script>
+</body>
+</html>

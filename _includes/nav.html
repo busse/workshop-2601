@@ -1,0 +1,10 @@
+<nav class="site-nav">
+  <a href="{{ '/' | relative_url }}" {% if page.url == '/' %}class="active"{% endif %}>Home</a>
+  <a href="{{ '/setup' | relative_url }}" {% if page.url == '/setup/' %}class="active"{% endif %}>Setup</a>
+  <a href="{{ '/exercises' | relative_url }}" {% if page.url == '/exercises/' %}class="active"{% endif %}>Exercises</a>
+  <a href="{{ '/slides' | relative_url }}" {% if page.url == '/slides/' %}class="active"{% endif %}>Slides</a>
+  <a href="{{ '/speaker-notes' | relative_url }}" {% if page.url == '/speaker-notes/' %}class="active"{% endif %}>Speaker Notes</a>
+  <a href="{{ '/run-of-show' | relative_url }}" {% if page.url == '/run-of-show/' %}class="active"{% endif %}>Run of Show</a>
+  <a href="{{ '/approach' | relative_url }}" {% if page.url == '/approach/' %}class="active"{% endif %}>Approach</a>
+  <a href="https://github.com/busse/mini-crm" target="_blank">Demo Repo ↗</a>
+</nav>
