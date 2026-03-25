@@ -7,7 +7,7 @@ title: Approach & Sources
 
 ## Reference Guide for: *Stop Typing, Start Orchestrating*
 
-This document captures the citable sources, key concepts, and practitioner-backed methods that underpin the workshop content. It serves as the detailed reference layer — use it for speaker notes, slide annotations, and exercise design. The [run-of-show](workshop-run-of-show.md) cross-references sections here by tag (e.g., `→ Approach §2A`).
+This document captures the citable sources, key concepts, and practitioner-backed methods that underpin the workshop content. It serves as the detailed reference layer — use it for speaker notes, slide annotations, and exercise design. The [run-of-show](run-of-show.md) cross-references sections here by tag (e.g., `→ Approach §2A`).
 
 *Last updated: 2026-03-11*
 
@@ -374,4 +374,4 @@ From (SRC-CE):
 
 ---
 
-*This document is the reference layer. For timing and flow, see [workshop-run-of-show.md](workshop-run-of-show.md).*
+*This document is the reference layer. For timing and flow, see [Run of Show](run-of-show.md).*

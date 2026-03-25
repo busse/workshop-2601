@@ -8,7 +8,7 @@ title: Demo Repo Spec
 
 A purpose-built small CRM application used as the shared codebase for the *Stop Typing, Start Orchestrating* workshop. Every demo and exercise runs against this repo. It needs to be instantly understandable, realistically imperfect, and rich enough to support feature additions across all workshop blocks.
 
-**Companion docs:** [workshop-run-of-show.md](workshop-run-of-show.md) | [workshop-approach.md](workshop-approach.md)
+**Companion docs:** [Run of Show](run-of-show.md) | [Approach & Sources](approach.md)
 
 ---
 

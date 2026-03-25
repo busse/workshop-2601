@@ -11,7 +11,7 @@ title: Run of Show
 
 **Format:** Single-track, live code-along. Advanced multi-agent exercises are stretch goals woven into later blocks.
 
-**Companion doc:** [workshop-approach.md](workshop-approach.md) — detailed source material, citable references, and speaker-note depth. Cross-referenced below as `→ Approach §X`.
+**Companion doc:** [Approach & Sources](approach.md) — detailed source material, citable references, and speaker-note depth. Cross-referenced below as `→ Approach §X`.
 
 ---
 
