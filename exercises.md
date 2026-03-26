@@ -289,7 +289,7 @@ Split a feature across two sessions: one for backend, one for frontend.
 
 3. **Integrate:** Once both are done, test the full flow together.
 
-**Why this works:** Backend and frontend are independent enough to build in parallel. This mirrors how real teams work — and it's how Boris Cherny runs 5+ sessions daily.
+**Why this works:** Backend and frontend are independent enough to build in parallel. This mirrors how real teams work — multiple agents on independent tracks, coordinating at integration points.
 
 ---
 

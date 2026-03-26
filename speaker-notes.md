@@ -124,13 +124,12 @@ title: Speaker Notes
 
 ## Slide 8 — The Numbers
 
-**On screen:** Three stat callouts — 4%, 200%, 100%
+**On screen:** Two stat callouts — 4%, 200%
 
 **Say + Do:**
 
 - ▶️ [advance] "Four percent of all public GitHub commits are now authored by Claude Code. Predicted to hit twenty percent by end of this year." ⏸️ [pause] "That's not autocomplete suggestions — those are full commits."
-- ▶️ [advance] "Anthropic's own engineering org has seen two hundred percent growth in code output per engineer, year over year. Same headcount."
-- ▶️ [advance] "And this one's my favorite. Boris Cherny, who leads the Claude Code team at Anthropic — he hasn't manually written a single line of code since November 2025. One hundred percent AI-generated. Zero hand edits." ⏸️ [pause] "He orchestrates. We're going to learn how he does it."
+- ▶️ [advance] "Anthropic's own engineering org has seen two hundred percent growth in code output per engineer, year over year. Same headcount. That's not writing more code — that's orchestrating agents that write the code."
 
 ⏭️ **Transition → Slide 9:** "Okay — enough slides. Let's see it work. From here on out, we're in the terminal."
 
@@ -484,29 +483,11 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 
 [point to right column] "And the extreme example — sixteen agents tasked with writing a C compiler in Rust. Two thousand Claude Code sessions. Twenty thousand dollars in API costs. The result: a hundred thousand lines of code that can compile the Linux kernel on x86, ARM, and RISC-V."
 
-⏭️ **Transition → Slide 29:** "This next one's fun."
+⏭️ **Transition → Slide 29:** "Your turn — pick a multi-agent pattern."
 
 ---
 
-## Slide 29 — Boris Cherny's Daily Setup
-
-**On screen:** Fragment list — 5 local sessions, 5-10 web, notifications, slash commands, Opus + thinking
-
-**Say + Do:**
-
-- ▶️ [advance] "Boris Cherny — head of Claude Code — runs five local sessions in iTerm2 tabs."
-- ▶️ [advance] "Plus five to ten web sessions on claude.ai. At the same time."
-- ▶️ [advance] "He uses system notifications so he gets pinged when a session needs input. He's managing a team."
-- ▶️ [advance] "Slash commands for every repeated workflow. /commit-push-pr — he says he runs that 'dozens of times daily.' /simplify for code cleanup. /verify-app for end-to-end tests."
-- ▶️ [advance] "And he uses Opus with extended thinking. Slower, but higher quality. Fewer corrections means less time babysitting."
-
-"This is where the workshop title comes from. He's not typing. He's orchestrating."
-
-⏭️ **Transition → Slide 30:** "Your turn — pick a multi-agent pattern."
-
----
-
-## Slide 30 — Exercise: Multi-Agent Patterns
+## Slide 29 — Exercise: Multi-Agent Patterns
 
 **On screen:** Exercise box — 3 options, 8 minutes + stretch
 
@@ -518,21 +499,21 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 
 **Debrief (30 sec):** "Who tried the Writer/Reviewer? What surprised you about the review quality from a fresh context? [take one or two responses] That's the core insight — a separate context is more honest than asking the same agent to review its own work."
 
-⏭️ **Transition → Slide 31:** "Let's bring it home."
+⏭️ **Transition → Slide 30:** "Let's bring it home."
 
 ---
 
-## Slide 31 — Block 6 Divider: Wrap-Up
+## Slide 30 — Block 6 Divider: Wrap-Up
 
 **On screen:** Section divider — "Block 6 · Wrap-Up & What's Next · 1:00–1:05"
 
 **Say:** "Five minutes to wrap up."
 
-⏭️ **Transition → Slide 32:** Advance.
+⏭️ **Transition → Slide 31:** Advance.
 
 ---
 
-## Slide 32 — The Three Skills, Revisited
+## Slide 31 — The Three Skills, Revisited
 
 **On screen:** Fragment list — decomposition, trust calibration, workflow design, with block references
 
@@ -544,11 +525,11 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 
 "These three skills transfer to *any* agentic tool. Claude Code is what we used today, but the skills are the point."
 
-⏭️ **Transition → Slide 33:** "Where does this go from here?"
+⏭️ **Transition → Slide 32:** "Where does this go from here?"
 
 ---
 
-## Slide 33 — Where This Applies
+## Slide 32 — Where This Applies
 
 **On screen:** Fragment list — onboarding, prototyping, code review, legacy migration
 
@@ -559,11 +540,11 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 - ▶️ [advance] "Code review at scale — we just talked about this. Multi-agent review catches things humans miss."
 - ▶️ [advance] "Legacy migration — the fan-out pattern. Generate a task list of 2,000 files to migrate, then batch-process them with Claude in non-interactive mode. It's like MapReduce for code changes."
 
-⏭️ **Transition → Slide 34:** "One last thought."
+⏭️ **Transition → Slide 33:** "One last thought."
 
 ---
 
-## Slide 34 — Closing Slide
+## Slide 33 — Closing Slide
 
 **On screen:** Quote — "You're not replacing developers. You're giving every developer a team." + resource links
 
@@ -575,11 +556,11 @@ Type in your main Claude session: `Use a subagent to research how the existing c
 
 "And I'm at cbusse@singlestoneconsulting.com — happy to talk about this stuff anytime."
 
-⏭️ **Transition → Slide 35:** "We've got five minutes for questions."
+⏭️ **Transition → Slide 34:** "We've got five minutes for questions."
 
 ---
 
-## Slide 35 — Buffer / Q&A
+## Slide 34 — Buffer / Q&A
 
 **On screen:** Section divider — "Q&A · 1:05–1:10" + "Pick a task. Let's orchestrate it live."
 
@@ -606,7 +587,7 @@ Things that might go wrong, and how to handle them:
 Don't hide it. "See that? It got confused. This is why trust calibration matters. Let me /clear and try a better prompt." This is *better* than a perfect demo — it teaches the skill.
 
 **Claude Code is slow (API latency):**
-"While it's thinking — this is a good time to mention that Boris uses Opus with extended thinking. Slower per-response, but fewer corrections. The total time to a working feature is often less."
+"While it's thinking — this is a good time to mention that Opus with extended thinking is slower per-response, but makes fewer corrections. The total time to a working feature is often less."
 
 **Someone's Claude Code isn't working:**
 "Pair up with your neighbor for now. One person drives, one navigates. That's actually how a lot of teams work — one agent, two humans reviewing."
@@ -615,7 +596,7 @@ Don't hide it. "See that? It got confused. This is why trust calibration matters
 Cut the debrief, not the exercise. People learn more from doing than from listening to you summarize. If you're behind by Block 4, shorten the demo and give full exercise time.
 
 **Someone asks about pricing/costs:**
-"Claude Code itself is free to install. You pay for API usage — or use it through a Pro or Max subscription. The workshop repo is small enough that today's exercises cost pennies. Boris's daily usage at Anthropic is obviously enterprise-scale."
+"Claude Code itself is free to install. You pay for API usage — or use it through a Pro or Max subscription. The workshop repo is small enough that today's exercises cost pennies."
 
 ---
 

@@ -39,7 +39,7 @@ title: Run of Show
   2. Trust calibration (knowing when to verify vs. ship)
   3. Workflow design (chaining agent steps into reliable pipelines)
 - *"This workshop is about building those three skills."*
-- Credibility data points: 4% of GitHub commits now from Claude Code; Boris Cherny has written 100% of his code via AI since Nov 2025; Anthropic engineering output up 200% `→ Approach §7`
+- Credibility data points: 4% of GitHub commits now from Claude Code; Anthropic engineering output up 200% `→ Approach §7`
 
 **No slides after this block** — everything moves to live terminal.
 
@@ -146,7 +146,6 @@ Attendees build a feature using the orchestration loop:
 - Tab 2 (Reviewer): *"Review the rate limiter implementation in @src/middleware/rateLimiter.ts. Look for edge cases, race conditions, and consistency with our existing middleware patterns."*
 - Feed review back to Tab 1 — show how a fresh context produces unbiased review
 - Key insight: *"You're a manager delegating to two developers simultaneously."*
-- Boris Cherny runs 5 local + 5-10 web sessions daily using this approach `→ Approach §3A`
 
 **Pattern 2 — Subagents for isolated work (2 min)** `→ Approach §5A`
 - *"Use a subagent to research how the existing codebase handles file uploads. Report back the patterns used."*
