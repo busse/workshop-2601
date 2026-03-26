@@ -64,6 +64,10 @@ permalink: /slides/
   .reveal .slides section {
     text-align: left;
     padding: 0 40px;
+    box-sizing: border-box;
+  }
+  .reveal .slides section > * {
+    max-width: 95%;
   }
 
   /* ─── Lists ─── */
@@ -90,7 +94,7 @@ permalink: /slides/
     color: #1a1a1a;
   }
   .reveal pre {
-    width: 100%;
+    width: auto;
     margin: 0.8em 0;
     box-shadow: none;
   }
@@ -129,7 +133,7 @@ permalink: /slides/
     font-size: 0.72em;
     border-collapse: collapse;
     margin: 0.6em 0;
-    width: 100%;
+    width: auto;
   }
   .reveal table th {
     font-family: var(--r-heading-font);
@@ -373,8 +377,8 @@ permalink: /slides/
   <blockquote>
     <p>"For the next 70 minutes, you're not writing code.<br>You're directing an agent that writes code."</p>
   </blockquote>
-  <div class="screenshot-placeholder short">
-    [ Screenshot: Terminal with Claude Code ready, repo URL on screen ]
+  <div style="text-align: center; margin-top: 0.5em;">
+    <img src="{{ '/assets/images/screenshot-s03s04.png' | relative_url }}" alt="Claude Code launched in mini-crm" style="max-height: 280px; border-radius: 6px; border: 1px solid #e0e0e0;">
   </div>
 </section>
 
@@ -442,15 +446,13 @@ permalink: /slides/
 </section>
 
 <section>
-  <h2>Your first conversation</h2>
-  <p style="font-size: 0.85em; color: #555; margin-bottom: 0.6em;">Ask questions like you'd ask a senior engineer who knows the codebase.</p>
-  <pre><code class="language-text">> What does this project do?
-
+  <h2 style="font-size: 1.2em; margin-bottom: 0.3em;">Your first conversation</h2>
+  <p style="font-size: 0.75em; color: #555; margin-bottom: 0.4em;">Ask questions like you'd ask a senior engineer who knows the codebase.</p>
+  <pre><code class="language-text" style="font-size: 0.7em; padding: 0.6em 1em;">> What does this project do?
 > Where is the main entry point?
-
 > Walk me through the request lifecycle for POST /api/deals</code></pre>
-  <div class="screenshot-placeholder">
-    [ Screenshot: Claude Code tool-use trace — reading files, grepping, following imports ]
+  <div style="text-align: center; margin-top: 0.4em;">
+    <img src="{{ '/assets/images/screenshot-s10-tooluse.png' | relative_url }}" alt="Claude Code tool-use trace showing file reads and greps" style="max-height: 340px; border-radius: 6px; border: 1px solid #e0e0e0;">
   </div>
 </section>
 
@@ -574,15 +576,19 @@ permalink: /slides/
 <section>
   <h2>Demo: building a feature end-to-end</h2>
   <p style="font-size: 0.82em; margin-bottom: 0.5em;">Adding email notifications when a deal moves to "Closed Won":</p>
-  <ol style="font-size: 0.78em;">
-    <li class="fragment"><strong>Explore</strong> — <em>"Read the deal_service and understand how stage transitions work."</em></li>
-    <li class="fragment"><strong>Plan</strong> — <em>"Create an implementation plan for email notifications. Don't write code yet."</em></li>
-    <li class="fragment"><strong>Implement</strong> — <em>"Go ahead. Run tests after each major change."</em></li>
-    <li class="fragment"><strong>Debug</strong> — <em>"I got this error: [paste]. Fix it."</em></li>
-    <li class="fragment"><strong>Verify</strong> — <em>"Run the tests and show me the results."</em></li>
-  </ol>
-  <div class="screenshot-placeholder short">
-    [ Screenshot: Plan mode output → implementation → test results ]
+  <div style="display: flex; align-items: flex-start; gap: 1.5em;">
+    <div style="flex: 1;">
+      <ol style="font-size: 0.78em;">
+        <li class="fragment" data-fragment-index="1"><strong>Explore</strong> — <em>"Read the deal_service and understand how stage transitions work."</em></li>
+        <li class="fragment" data-fragment-index="2"><strong>Plan</strong> — <em>"Create an implementation plan for email notifications. Don't write code yet."</em></li>
+        <li class="fragment" data-fragment-index="3"><strong>Implement</strong> — <em>"Go ahead. Run tests after each major change."</em></li>
+        <li class="fragment" data-fragment-index="4"><strong>Debug</strong> — <em>"I got this error: [paste]. Fix it."</em></li>
+        <li class="fragment" data-fragment-index="5"><strong>Verify</strong> — <em>"Run the tests and show me the results."</em></li>
+      </ol>
+    </div>
+    <div class="fragment" data-fragment-index="2" style="flex: 1; text-align: center;">
+      <img src="{{ '/assets/images/screenshot-s19s20-planmodeoutput.png' | relative_url }}" alt="Claude Code plan mode output for email notifications" style="max-height: 380px; border-radius: 6px; border: 1px solid #e0e0e0;">
+    </div>
   </div>
 </section>
 
