@@ -360,6 +360,7 @@ permalink: /slides/
 
 <section>
   <h2>Quick check</h2>
+  <pre style="margin-bottom: 0.8em; font-size: 0.84em; white-space: pre-wrap; word-wrap: break-word; overflow-wrap: break-word;"><code class="language-text">git clone https://github.com/busse/mini-crm.git &amp;&amp; cd mini-crm</code></pre>
   <ul>
     <li class="fragment">Who's used an AI coding tool before?</li>
     <li class="fragment">Who's used one from a <strong>terminal</strong>?</li>
@@ -371,7 +372,6 @@ permalink: /slides/
       <li class="fragment">Claude Code installed &amp; authenticated</li>
       <li class="fragment">Workshop repo cloned</li>
     </ul>
-    <pre class="fragment" style="margin-top: 0.6em;"><code class="language-text">git clone https://github.com/busse/mini-crm.git &amp;&amp; cd mini-crm</code></pre>
   </div>
 </section>
 
@@ -446,7 +446,7 @@ permalink: /slides/
 <section>
   <h2 style="font-size: 1.2em; margin-bottom: 0.3em;">Your first conversation</h2>
   <p style="font-size: 0.75em; color: #555; margin-bottom: 0.4em;">Ask questions like you'd ask a senior engineer who knows the codebase.</p>
-  <pre><code class="language-text" style="font-size: 0.7em; padding: 0.6em 1em;">> What does this project do?
+  <pre><code class="language-text" style="font-size: 1.09em; padding: 0.6em 1em;">> What does this project do?
 > Where is the main entry point?
 > Walk me through the request lifecycle for POST /api/deals</code></pre>
   <div style="text-align: center; margin-top: 0.4em;">
@@ -544,6 +544,13 @@ permalink: /slides/
       <li>Compare output with a neighbor — whose prompt produced more complete code?</li>
     </ol>
     <p style="font-size: 0.78em; color: #888; margin-top: 0.4em;"><strong>Stretch:</strong> Refine the prompt based on what Claude got wrong, re-run, see the improvement.</p>
+  </div>
+  <div style="margin-top: 0.5em; font-size: 0.65em; color: #555; line-height: 1.5;">
+    <span class="mnemonic-letter">D</span>efine the outcome ·
+    <span class="mnemonic-letter">E</span>xisting patterns ·
+    <span class="mnemonic-letter">C</span>onstraints &amp; edge cases ·
+    <span class="mnemonic-letter">O</span>utput format ·
+    <span class="mnemonic-letter">M</span>easure of done
   </div>
 </section>
 
@@ -699,10 +706,10 @@ permalink: /slides/
       </ul>
     </div>
     <div class="col-narrow">
-      <div class="screenshot-placeholder short">
-        [ Screenshot: Agent Teams<br>split-pane view ]
-      </div>
     </div>
+  </div>
+  <div style="text-align: center; margin-top: 0.4em;">
+    <img src="{{ '/assets/images/screenshot-agent-orch.jpg' | relative_url }}" alt="Agent Teams orchestration view" style="max-height: 300px; border-radius: 6px; border: 1px solid #e0e0e0;">
   </div>
 </section>
 
