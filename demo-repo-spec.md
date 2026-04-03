@@ -16,7 +16,7 @@ A purpose-built small CRM application used as the shared codebase for the *Stop 
 
 | Layer | Choice | Rationale |
 |-------|--------|-----------|
-| Language | Python 3.11+ | Broadest comfort zone for a data-summit audience |
+| Language | Python 3.10+ | Broadest comfort zone for a data-summit audience |
 | Framework | FastAPI | Auto-generated OpenAPI docs, async-friendly, minimal boilerplate |
 | Database | SQLite via SQLAlchemy | Zero install (no DB server), single file, easy to reset |
 | Migrations | Alembic | Realistic project structure without heavyweight infra |
@@ -279,7 +279,7 @@ These are seeded into the repo by design, so exercises produce satisfying discov
 **macOS / Linux:**
 ```bash
 # Prerequisites
-python3 --version   # 3.11+
+python3 --version   # 3.10+
 claude --version    # Claude Code installed and authenticated
 
 # Clone and setup
@@ -300,7 +300,7 @@ uvicorn app.main:app      # Visit http://localhost:8000
 **Windows (PowerShell):**
 ```powershell
 # Prerequisites
-python --version    # 3.11+
+python --version    # 3.10+
 claude --version    # Claude Code installed and authenticated
 
 # Clone and setup
@@ -411,7 +411,7 @@ A small CRM application built with Python, FastAPI, and SQLite.
 
 - [ ] **Repo hosting:** Public GitHub repo under Chris Busse's account? Anthropic org? Workshop-specific org?
 - [ ] **License:** MIT for maximum simplicity?
-- [ ] **Python version floor:** 3.11 or 3.12? (3.11 is safer for attendee compatibility)
+- [ ] **Python version floor:** 3.10 or 3.12? (3.10 is safer for attendee compatibility)
 - [ ] **Include `.claude/commands/`?** Could ship a sample slash command to demonstrate Block 4 stretch goal, but might be confusing pre-workshop
 
 ---

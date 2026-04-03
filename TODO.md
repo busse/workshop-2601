@@ -39,7 +39,7 @@ These were written before the repo was built but have since been resolved. Check
 
 - [ ] **Repo hosting** — Resolved: public repo at github.com/busse/mini-crm
 - [ ] **License** — Resolved: MIT
-- [ ] **Python version floor** — Resolved: 3.11+
+- [ ] **Python version floor** — Resolved: 3.10+
 - [ ] **Include .claude/commands/?** — Resolved: not included in demo repo
 
 ---

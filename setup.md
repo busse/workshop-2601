@@ -24,7 +24,11 @@ cd mini-crm
 
 ### 3. Install Python dependencies
 
-Python 3.11+ is required.
+Python 3.10+ is required. Check your version first:
+
+```bash
+python3 --version   # must be 3.10 or newer
+```
 
 **macOS / Linux:**
 ```bash
@@ -57,6 +61,21 @@ Visit [http://localhost:8000](http://localhost:8000) — you should see the app 
 
 ---
 
-If you run into issues, don't worry — we'll have a few minutes at the start of the workshop to troubleshoot.
+### Troubleshooting
+
+**Wrong Python version?** Run `python3 --version`. You need 3.10 or newer.
+
+- **macOS (Homebrew):** `brew install python@3.12` then use `python3.12 -m venv .venv`
+- **Ubuntu / Debian:** `sudo apt install python3.12 python3.12-venv`
+- **pyenv:** `pyenv install 3.12 && pyenv local 3.12`
+- **Windows:** Download from [python.org/downloads](https://www.python.org/downloads/)
+
+**`pip install` fails with "requires-python"?** Your Python is too old — see above.
+
+**`ModuleNotFoundError: No module named 'venv'`?** On Ubuntu/Debian: `sudo apt install python3.X-venv` (replace `3.X` with your version).
+
+---
+
+If you run into other issues, don't worry — we'll have a few minutes at the start of the workshop to troubleshoot.
 
 Questions? Contact [cbusse@singlestoneconsulting.com](mailto:cbusse@singlestoneconsulting.com)
